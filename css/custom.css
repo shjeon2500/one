@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic|Nanum+Gothic+Coding');
+* {
+	font-family: 'Nanum Gothic', sans-serif;
+}
+a {
+	color: #000000;
+	text-decoration: none;
+}
+a:hover {
+	color: #bbbbbb;
+	text-decoration: none;
+	cursor: pointer;
+}
+/* 테이블 관련 디자인 처리 */
+thead th {
+	background-color: #006DCC;
+	color: white;
+	text-align: center;
+}
+tr td:first-child,
+tr th:first-child {
+	border-top-left-radius: 6px;
+	border-bottom-left-radius: 6px;
+}
+tr td:last-child,
+tr th:last-child {
+	border-top-left-radius: 6px;
+	border-bottom-left-radius: 6px;
+}
+/* 모달 관련 디자인 처리 */
+.vertical-alignment-helper {
+	display: table;
+	height: 100%;
+	width: 100%;
+	pointer-events: none;
+}
+.vertical-align-center {
+	display: table-cell;
+	vertical-align: middle;
+	pointer-events: none;
+}
+.modal-content {
+	width: inherit;
+	height: inherit;
+	margin: 0 auto;
+	pointer-events: all;
+}
+/* 내비게이션 영역  */
+.navbar-default { /* 배경 색상 */
+	background-color: #ffffff;
+	border-color: #ffffff;
+}
+.navbar-default .navbar-brand { /* 내비게이션 제목 색상 */
+	color: #000000;
+}
+.navbar-default .navbar-brand:hover
+.navbar-default .navbar-brand:focus { /* 내비게이션 제목에 마우스를 올렸을 때 */
+	background-color: transparent;
+	color: #444444;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus { /* 현재 선택된 내비게이션 색상 이벤트 */
+	color: black;
+	background-color: #ffffff;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus { /* 내비게이션의 글자에 마우스를 올렸을 때 */
+	color: #444444;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus { /* 드랍다운이 열였을 때 마우스 색상 이벤트 */
+	color: #ffffff;
+	background-color: #000000;
+	text-decoration: none;
+}
+.navbar-default .navbar-nav > li > a { /* 내비게이션 기본 색상 */
+	color: black;
+}
+@media (max-width: 767px) { /* 해상도가 적을 때 드랍다운 아이템에 마우스를 올렸을 때 */
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+		color: #000000;
+	}
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover 
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+		color: #444444;
+	}
+}
+.jumbotron {
+	background-color: white;
+	width: 60%;
+	height: 300px;
+}
+.btn-lg {
+	display: block;
+	margin: 0 auto;
+	width: 150px;
+	height: 50px;
+}
+.poster {
+	width: 86%;
+	margin: 0;
+}
+.col-sm-6 > .posterContent {
+	color: white;
+}
+.one {
+	margin:3px 0px;
+	width: 24%;
+}
+.two {
+	margin: 0;
+	width: 19%;
+}
+.container > .btn-two {
+	background-color: #262932;
+	border-color: #ffffff;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 550px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 770px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 970px;
+  }
+}
+.latest {
+	margin: 2px 2px;
+	width: 115%;
+}
+.three {
+	margin: 0;
+	width: 110%;
+}
+/* 파일 업로드 디자인 */
+.btn-file {
+	position: relative;
+	overflow: hidden;
+}
+.btn-file input[type=file] {
+	position: absolute;
+	top: 0;
+	right: 0;
+	min-width: 100%;
+	min-height: 100%;
+	font-size: 100px;
+	text-align: right;
+	filter: alpha(opacity=0);
+	opacity: 0;
+	outline: none;
+	background: white;
+	cursor: inherit;
+	display: block;
+}
+.file {
+	visibility: hidden;
+	position: absolute;
+}
